@@ -6,8 +6,8 @@ https://arxiv.org/abs/1606.03015) and test whether their magnitude differences a
 Gaia DR1 parallax differences, on the assumption that for spectroscopic twins the absolute magnitudes in
 the Gaia G-band are the same.
 
-The test is done by plotting for each pair of twins (A, B) the value of flux_A*parallax_B^2 vs.
-flux_B*parallax_A^2. These values should be the same under the above assumption. Plotting these ensures
+The test is done by plotting for each pair of twins (A, B) the value of flux_A * parallax_B^2 vs.
+flux_B * parallax_A^2. These values should be the same under the above assumption. Plotting these ensures
 that the error-bars in both axes have comparable values.
 
 For each Pleiades star the values are calculated for the star paired with each of its twin candidates. In
