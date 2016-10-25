@@ -12,3 +12,16 @@ that the error-bars in both axes have comparable values.
 
 For each Pleiades star the values are calculated for the star paired with each of its twin candidates. In
 addition each of the twin candidates are also paired and the product of flux and parallax^2 calculated.
+
+Data files
+----------
+
+pleiades-twins.csv: CSV file with Hipparcos identifiers of all the PelsXX Pleiades members and the twin
+candidates.
+
+HII-identifiers.txt: Pleiades member HII identifier and Gaia source_id
+
+pleiades-twins-hii.vot: Table extracted form Gaia DR1 Archive by cross-matching through
+pleiades-twins.csv.
+
+pleiades-twins-hip.vot: Table extracted form Gaia DR1 Archive by cross-matching HII-identifiers.txt.
