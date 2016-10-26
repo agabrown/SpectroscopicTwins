@@ -8,14 +8,14 @@ their Gaia DR1 parallax differences, on the assumption that for spectroscopic tw
 magnitudes in the Gaia G-band are the same (ignoring extinction effects).
 
 The test is done by calculating for each pair of twins (A, B) the value of flux_A * parallax_B^2 vs.
-flux_B * parallax_A^2. These values should be the same under the above assumption. Plotting these
-ensures that the error-bars in both axes have comparable values. In addition the more
-straightforward to understand differences in G and 5 * log10(parallax) are calculated, as well as
-the differenc in H (extinction corrected as in equation 4 of Maedler et al).
+flux_B * parallax_A^2. These values should be the same under the above assumption. These quantities
+have the advantadge of being linear in flux and that they have comparable error-bars. In addition
+the more straightforward to understand differences in G and 5 * log10(parallax) are calculated, as
+well as the difference in H (extinction corrected, as in equation 4 of Maedler et al).
 
 For each Pleiades star the values are calculated for the star paired with each of its twin
-candidates. In addition each of the twin candidates are also paired and the product of flux and
-parallax^2 calculated.
+candidates. In addition each of the twin candidates are also paired and the quantities above
+calculated.
 
 Dependencies
 ------------
