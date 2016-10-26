@@ -1,4 +1,5 @@
 # SpectroscopicTwins
+
 Python code for spectroscopic twins plot produced for Gaia Sprint NYC
 
 Take the spectroscopic twins for Pleiades stars listed in tables 1 and 2 of Maedler et al (2016,
@@ -13,6 +14,11 @@ that the error-bars in both axes have comparable values.
 For each Pleiades star the values are calculated for the star paired with each of its twin candidates. In
 addition each of the twin candidates are also paired and the product of flux and parallax^2 calculated.
 
+Dependencies
+------------
+
+Numpy, Astropy, Matplotlib
+
 Data files
 ----------
 
@@ -21,7 +27,17 @@ candidates.
 
 HII-identifiers.txt: Pleiades member HII identifier and Gaia source_id
 
-pleiades-twins-hii.vot: Table extracted form Gaia DR1 Archive by cross-matching through
-pleiades-twins.csv.
+pleiades-twins-hii-2mass.vot: Table extracted form Gaia DR1 Archive by cross-matching through
+pleiades-twins.csv, includes 2MASS photometry
 
-pleiades-twins-hip.vot: Table extracted form Gaia DR1 Archive by cross-matching HII-identifiers.txt.
+pleiades-twins-hip-2mass.vot: Table extracted form Gaia DR1 Archive by cross-matching
+HII-identifiers.txt, includes 2MASS photometry
+
+Code
+----
+
+process-gaiadr1-2mass-data.py: Process the input data above and store result in a FITS file (in
+twintables/ folder).
+
+fancyaxes.py, distinct_colours.py: Plotting utilities.
+yvsx-colourcoded.py: Quick plot of Y vs X from the output file in twintables/.
